@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dirkie Van den Berg — Portfolio</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Portfolio of Dirkie — developer, PC technician and student. HTML/CSS/JS, Delphi, Python, Flutter.">
+</head>
+<body>
+  <!-- SITE WRAPPER -->
+  <div class="site" id="site">
+
+    <!-- HEADER / NAV -->
+    <header class="site-header" id="siteHeader" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#home">Dirkie<span class="accent">.</span></a>
+
+        <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#home" data-nav>Home</a></li>
+            <li><a href="#skills" data-nav>Skills</a></li>
+            <li><a href="#experience" data-nav>Experience</a></li>
+            <li><a href="#projects" data-nav>Projects</a></li>
+            <li><a href="#services" data-nav>Services</a></li>
+            <li><a href="#contact" data-nav>Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button id="themeToggle" class="btn-icon" aria-label="Toggle theme">🌓</button>
+          <button id="menuToggle" class="btn-icon mobile-only" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+        <div class="mobile-inner">
+          <button id="mobileClose" class="mobile-close" aria-label="Close menu">✕</button>
+          <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+            <ul>
+              <li><a href="#home" data-mobile-nav>Home</a></li>
+              <li><a href="#skills" data-mobile-nav>Skills</a></li>
+              <li><a href="#experience" data-mobile-nav>Experience</a></li>
+              <li><a href="#projects" data-mobile-nav>Projects</a></li>
+              <li><a href="#services" data-mobile-nav>Services</a></li>
+              <li><a href="#contact" data-mobile-nav>Contact</a></li>
+              <li><a class="cv-link" href="assets/cv.pdf" download>Download CV</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section id="home" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-left reveal">
+            <h1 class="hero-title">Hi, I'm <span class="gradient">Dirkie</span></h1>
+            <p class="hero-sub">Developer • PC Technician • Student — I build practical apps, tools and fixes that work.</p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn primary">See projects</a>
+              <a href="assets/cv.pdf" class="btn ghost" download>Download CV</a>
+            </div>
+
+            <ul class="quick-info">
+              <li><strong>Location:</strong> South Africa</li>
+              <li><strong>Available:</strong> Junior roles & local freelance</li>
+            </ul>
+          </div>
+
+          <aside class="hero-right reveal">
+            <div class="profile-card">
+              <img src="assets/profile.jpg" alt="Profile picture of Dirkie" class="avatar">
+              <h3 class="name">Dirkie Van den Berg</h3>
+              <p class="muted">Coding, hardware repairs, Minecraft plugins</p>
+              <div class="socials">
+                <a href="https://github.com/oBoompie" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:youremail@example.com">Email</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section alt-bg">
+        <div class="container">
+          <h2 class="section-title reveal">Skills</h2>
+
+          <div class="skills-grid">
+            <div class="skill reveal">
+              <div class="skill-head">
+                <h4>Python</h4><span>85%</span>
+              </div>
+              <div class="bar"><div class="bar-fill" style="--w:85%"></div></div>
+            </div>
+
+            <div class="skill reveal">
+              <div class="skill-head">
+                <h4>HTML / CSS / JS</h4><span>90%</span>
+              </div>
+              <div class="bar"><div class="bar-fill" style="--w:90%"></div></div>
+            </div>
+
+            <div class="skill reveal">
+              <div class="skill-head">
+                <h4>Delphi</h4><span>70%</span>
+              </div>
+              <div class="bar"><div class="bar-fill" style="--w:70%"></div></div>
+            </div>
+
+            <div class="skill reveal">
+              <div class="skill-head">
+                <h4>Flutter</h4><span>65%</span>
+              </div>
+              <div class="bar"><div class="bar-fill" style="--w:65%"></div></div>
+            </div>
+
+            <div class="skill reveal">
+              <div class="skill-head">
+                <h4>Git</h4><span>80%</span>
+              </div>
+              <div class="bar"><div class="bar-fill" style="--w:80%"></div></div>
+            </div>
+
+            <div class="skill reveal">
+              <div class="skill-head">
+                <h4>Scripting / Automation</h4><span>85%</span>
+              </div>
+              <div class="bar"><div class="bar-fill" style="--w:85%"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Experience</h2>
+
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="date">2025 — Present</div>
+              <div class="content">
+                <h4>Freelance Tech Repair</h4>
+                <p>Diagnose and repair PCs, install OS, upgrade hardware and optimize systems for local clients.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal">
+              <div class="date">2024 — 2025</div>
+              <div class="content">
+                <h4>Student Developer Projects</h4>
+                <p>Delphi booking system, Python automation scripts, web apps and portfolio site development.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section alt-bg">
+        <div class="container">
+          <h2 class="section-title reveal">Projects</h2>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <img src="assets/project-portfolio.png" alt="Portfolio screenshot">
+              <h3>Portfolio Website</h3>
+              <p>Modern portfolio with contact form and GitHub Pages deployment.</p>
+              <div class="card-actions">
+                <button class="btn-outline" data-demo="#modal-portfolio">Details</button>
+                <a class="btn" href="https://github.com/oBoompie/Portfolio" target="_blank" rel="noopener">View Code</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <img src="assets/project-chatbot.png" alt="Chatbot screenshot">
+              <h3>AI Chatbot Prototype</h3>
+              <p>Local web UI that connects to an AI backend (prototype/demos).</p>
+              <div class="card-actions">
+                <button class="btn-outline" data-demo="#modal-chatbot">Details</button>
+                <a class="btn" href="#" target="_blank">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <img src="assets/project-minecraft.png" alt="Minecraft plugin">
+              <h3>Minecraft Plugin</h3>
+              <p>Bukkit plugin with autosorter and performance tweaks for low-end servers.</p>
+              <div class="card-actions">
+                <button class="btn-outline" data-demo="#modal-minecraft">Details</button>
+                <a class="btn" href="#" target="_blank">Download</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Services</h2>
+
+          <div class="services-grid">
+            <div class="service-card reveal">
+              <h4>PC Repair & Upgrades</h4>
+              <p>Hardware diagnostics, component replacement, thermal maintenance and upgrades.</p>
+            </div>
+
+            <div class="service-card reveal">
+              <h4>Website Development</h4>
+              <p>Responsive brochure sites and portfolios with fast delivery.</p>
+            </div>
+
+            <div class="service-card reveal">
+              <h4>Custom Scripts</h4>
+              <p>Automation, backups, simple tools to speed repetitive tasks.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS (small) -->
+      <section id="testimonials" class="section alt-bg">
+        <div class="container">
+          <h2 class="section-title reveal">Testimonials</h2>
+          <div class="testimonials reveal">
+            <blockquote>
+              <p>"Quick, professional and fixed my PC within a day."</p>
+              <cite>— Local client</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container contact-grid">
+          <div class="contact-info reveal">
+            <h2>Get in touch</h2>
+            <p>If you want to hire me or need a repair — send a message and I'll reply as soon as possible.</p>
+
+            <ul class="info-list">
+              <li><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+27123456789">+27 12 345 6789</a></li>
+              <li><strong>Location:</strong> South Africa</li>
+            </ul>
+          </div>
+
+          <form id="contactForm" class="contact-form reveal"
+                action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <label class="visually-hidden" for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" placeholder="Your name" required>
+
+            <label class="visually-hidden" for="cf-email">Email</label>
+            <input id="cf-email" name="email" type="email" placeholder="Your email" required>
+
+            <label class="visually-hidden" for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="6" placeholder="Your message" required></textarea>
+
+            <div class="form-row">
+              <button class="btn primary" type="submit">Send message</button>
+              <div id="formStatus" class="form-status" aria-live="polite"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="copyYear"></span> Dirkie — Built with care</div>
+        <div class="footer-links">
+          <a href="https://github.com/oBoompie" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:youremail@example.com">Email</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- MODALS (project details) -->
+  <div id="modal-portfolio" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3>Portfolio Website</h3>
+      <p>Built with HTML/CSS/JS, deployed on GitHub Pages. Contact form uses Formspree.</p>
+    </div>
+  </div>
+
+  <div id="modal-chatbot" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3>AI Chatbot Prototype</h3>
+      <p>Prototype connecting a web UI to an AI service. Conversation memory & preferences.</p>
+    </div>
+  </div>
+
+  <div id="modal-minecraft" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3>Minecraft Plugin</h3>
+      <p>Bukkit plugin that adds autosorters and admin tools to improve low-end server performance.</p>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="design.js"></script>
+</body>
+</html>
